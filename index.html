@@ -14,8 +14,9 @@
 
 <body>
 	<header>
-		<h1>De titel van je tijdlijn</h1>
-		<p>Korte omschrijving van je tijdlijn</p>
+		<!-- bron logo https://commons.wikimedia.org/wiki/File:Mario_Series_Logo.svg -->
+		<img src="images/supermariologo.png" alt="logo">
+		<p>In this game you will go through different versions of different games of Mario Bros</p>
 	</header>
 
 	<main>
@@ -28,42 +29,92 @@
 		<!-- in elk listitem staat nu een link -->
 		<!-- de link kun je vullen met jouw content -->
 		<!-- of in zijn geheel vervangen door jouw content -->
+
+		<article>
+
+			<!-- SCHERMEN IN GAMEBOY -->
+			<section class="scherm">
 		<ol>
 			<li>
-				<a href="#">eerste punt in tijd</a>
+				<img src="images/background1.jpg" alt="scherm1">
 			</li>
 			<li>
-				<a href="#">tweede punt in tijd</a>
+				
 			</li>
 			<li>
-				<a href="#">derde punt in tijd</a>
+				
 			</li>
 			<li>
-				<a href="#">vierde punt in tijd</a>
+				
 			</li>
 			<li>
-				<a href="#">vijde punt in tijd</a>
+				
 			</li>
 			<li>
-				<a href="#">zesde punt in tijd</a>
+				
 			</li>
 			<li>
-				<a href="#">zevende punt in tijd</a>
+				
 			</li>
 			<li>
-				<a href="#">achste punt in tijd</a>
+				
 			</li>
 			<li>
-				<a href="#">negende punt in tijd</a>
+			
 			</li>
 			<li>
-				<a href="#">tiende punt in tijd</a>
+				
 			</li>
 			<li>
-				<a href="#">elfde punt in tijd</a>
+				
 			</li>
 		</ol>
-	</main>
+			
+		</section>
+
+
+		<!-- LOGO GAMEBOY (bron https://www.logolynx.com/topic/nintendo+game+boy)-->
+		<img src="images/logo-nintendo.png" alt="logo nintendo" class="logonintendo">
+
+
+		<!-- BUTTONS GAMEBOY -->
+		<section class="rondeKnop1">
+			<button><p>A</p></button> 
+		</section>
+
+		<section class="rondeKnop2">
+			<button><p>B</p></button> 
+		</section>
+
+
+		<!-- D-PAD BUTTON (bron https://codepen.io/thefewunshaken/pen/bjYWvB) -->
+		<div class="wrapper">
+			<div class="center">
+				<button class="center-circle">C</button>
+			</div>
+			
+			<div class="up direction">
+			  <button class="up-triangle">U</button>
+			</div>
+		  
+			<div class="right direction">
+			  <button class="right-triangle">R</button>
+			</div>
+
+			<div class="down direction">
+			  <button class="down-triangle">D</button>
+			</div>
+		  
+			<div class="left direction">
+			  <button class="left-triangle">L</button>
+			</div>
+		  
+		</div>
+
+	</article>
+
+
+</main>
 
 	<script src="scripts/script.js"></script>
 </body>
