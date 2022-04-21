@@ -10,13 +10,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-## Jij
+## Isabelle Duivenvoorden
 
 ### Ontwerper:
-Sanne 't Hooft (vervangen door jouw naam)
+Isabelle Duivenvoorden
 
 #### Je startniveau:
-Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
+Mijn startniveau is: blauw
 
 
 
@@ -33,8 +33,8 @@ Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - punt 1
-  - punt 2
+  - leren animeren in CSS
+  - leren meer diepte te creëren in mijn designs, om het zo realistisch mogelijk te laten lijken
   - nog een punt
   - ...
  
@@ -46,7 +46,16 @@ Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
 ## Voortgang/Feedback 1
 
 <details>
-  <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
+  <summary>Tijdens de eerste feedback sessie heb ik voornamelijk mijn concept aangescherpt. Het idee is leuk, alleen heb ik met Timo nagedacht over hoe ik de transities naar de volgende spellen kan realiseren. Ik twijfelde tussen transitie van links naar rechts, of van boven naar beneden. Aangezien ik Mario door verschillende buizen wil laten  verplaatsen, is het het meest logisch om het scherm verticaal (boven > beneden) te laten bewegen. 
+    
+    Bevindingen:
+    * De interactie van mijn prototype begint door de buttons te besturen
+    * Transitie van het scherm wordt van boven naar beneden (verschillende spellen uit steeds een moderner tijdperk)
+    * Mario laten bewegen door te klikken op 'A'-button
+    * Bewegen naar volgend scherm kan door te klikken op knop naar beneden
+    *...
+    *
+    *Hiervoor heb de transitieMijn bevindingen + wijzigingen (minimaal 5)</summary>
 
   ### Bevinding 1:
   Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
