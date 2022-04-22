@@ -88,6 +88,9 @@ Mijn startniveau is: blauw
   
   ### Bevinding 1:
   Na het plaatsen van een img in het scherm van de gameboy kreeg ik deze niet netjes in het kader geplaatst. Dit heb ik opgelost door overflow:hidden te gebruiken. Zie foto's van before en after.
+  
+  <img width="1213" alt="1 1" src="https://user-images.githubusercontent.com/55750165/164761563-1728350c-6c14-47b6-bd92-3b5a5ebfacc2.png">
+
 
   #### oplossing:
   Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
