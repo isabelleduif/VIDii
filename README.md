@@ -84,10 +84,10 @@ Mijn startniveau is: blauw
 ## Voortgang/Feedback 2
 
 <details>
-  <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
+  <summary>Na afgelopen keer heb ik een aantal wijzigingen doorgevoerd in mijn concept. In plaats van Mario door de buizen laten gaan en vervolgens automatisch verschuiven naar het volgende beeld, ga ik de gebruiker laten scrollen door de verschillende schermpjes. Dit was wat betreft code beter haalbaar voor mij. Ik maak drie verschillende schermen waarin drie verschillende games in te zien zijn, allemaal uit een ander jaartal (1985 - ... - 2009). Na 2009 zijn er geen hele grote wijzigingen meer doorgevoerd in het karakter van Mario. Verder heb ik een bijpassende achtergrond toegebvoegd die ik wil laten bewegen. Ik ga kijken hoe ik de wolkjes langzaam kan laten bewegen, zodat er iets meer interactie is. Hieronder staan nog een aantal belangrijke punten beschreven die niet in orde. Deze punten heb ik uiteindelijk kunnen oplossen door de juiste code te gebruiken.(minimaal 5)</summary>
   
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Na het plaatsen van een img in het scherm van de gameboy kreeg ik deze niet netjes in het kader geplaatst. Dit heb ik opgelost door overflow:hidden te gebruiken. Zie foto's van before en after.
 
   #### oplossing:
   Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
