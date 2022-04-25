@@ -12,227 +12,559 @@ button:not([disabled]) {
   cursor:pointer;
 }
 
-/* jouw CSS vanaf hier */
 
 
+/***************/
 /* WEBSITE KLEURENPALET */
+/***************/
 :root {
   --ronde-buttons-kleur: #973663;
   --linker-button-kleur: #2D2F30;
   --selectstart-button-kleur: #817D82;
   --nintendo-logo-kleur: #404188;
   --nintendo-gameboy-kleur: #C3C0BB;
+  --ronde-buttons-kleur-hover: #86335a;
+  --vierkante-button-kleur-hover: #18191a;
 }
 
 
-/* HEDER LOGO */
-header img {
-  width: 12em;
-  height: auto;
-}
 
+/***************/
+/* HEADER LOGO */
+/***************/
 header {
-  display: grid;
-  place-items: center center;
+  /* logo altijd gecentreerd in het midden */
+ display:grid;
+ place-items:center center;
+}
+
+header img {
+  /* grootte van de img */
+ width:12em;
+ height:auto;
 }
 
 
+
+/***************/
 /* BODY */
+/***************/
 body {
   /* de standaard margin van de body uitzetten */
 	margin:0;
 	/* zo hoog als het scherm */
   height:100vh;
   
-  /* een font kiezen - dat erven de kinderen */
-  font-family:saira, sans-serif;
-  /* de achtergrondkleur */
-  background-color:dodgerblue;
-  
   /* gameboy in het midden van de body */
   display:grid;
   place-items:center center;
 }
 
+/* moving background bron code https://stackoverflow.com/questions/37903824/how-can-i-make-infinite-flowing-background-with-only-css  */
+.backgroundwebsite {
+  background-image:url("/images/backgroundwebsite.jpg");
+  background-size:auto 100%;
+  background-repeat:repeat;
+  background-position: 0 0;
+  position:absolute;
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
 
-/* SCHERM VIDEOGAME */
+  animation-name:backgroundanimation;
+  animation-duration: 600s;
+  animation-timing-function: linear;
+  z-index: -1;
+}
 
-
-/* h1 {
-  color: var(--nintendo-logo-kleur);
-} */
-
-.logonintendo {
-  position: relative;
-  width: 150px;
+.jaartal1 {
+  position:absolute;
+  width:15em;
   height: auto;
-  top: .8em;
+  bottom:5%;
+  right: 5%;
 }
 
-ol {
-  margin: 0;
-  padding: 0;
-}
+.madeby {
+  position: absolute;
+  width:15em;
+  height: auto;
+  bottom:5%;
+  right: 79%;
 
-ol li {
-  overflow: hidden;
-  /* alles wat er buiten valt haalt die weg */
-  border-radius:1em 1em 4em 1em / 1em 1em 3.9em 1em;
-  /* https://html-css-js.com/css/generator/box-shadow/ */
-  box-shadow:
-    inset -.1em -.1em .1em rgb(240 240 240),
-    inset .1em .1em .1em rgb(51 58 64);
-  }
-
-ol li img{
-  border-radius:1em 1em 8em 1em / 1em 1em 5em 1em;
-  width: 115%;
 }
 
 
+
+/***************/
 /* GAMEBOY */
+/***************/
 article {
-  position: relative;
-
-  width: 24em;
-  height: 36em;
+  position:relative;
+  width:24em;
+  height:36em;
   padding:3em 2em 2em 2em;
-  
-  /* background-color:rgb(223 223 223); */
-  background-color: var(--nintendo-gameboy-kleur);
-
+    background-color:var(--nintendo-gameboy-kleur);
   border-radius:1em 1em 8em 1em / 1em 1em 5em 1em;
   /* https://html-css-js.com/css/generator/box-shadow/ */
   box-shadow:
     inset -.25em -.25em .25em rgb(102 102 102),
     inset .25em .25em .25em rgb(255 255 255),
     1em 1em 1em rgb(0 0 0 / .5);
-}
-
-section.rondeKnop1 button {
-  background-color: var(--ronde-buttons-kleur);
-  width: 3em;
-  height: 3em;
-  border-radius: 50%;
-  aspect-ratio: 1/1;
-  border-style: none;
-  box-shadow:
-  inset -.25em -.25em .25em #5e203d,
-  inset .25em .25em .25em #e2abc3,
-  .5em .5em .5em rgb(0 0 0 / .1);
-
-  position: relative;
-  left: 20em;
-  bottom: -1em;
-}
-
-section.rondeKnop2 button {
-  background-color: var(--ronde-buttons-kleur);
-  width: 3em;
-  height: 3em;
-  border-radius: 50%;
-  aspect-ratio: 1/1;
-  border-style: none;
-  box-shadow:
-  inset -.25em -.25em .25em #5e203d,
-  inset .25em .25em .25em #e2abc3,
-  .5em .5em .5em rgb(0 0 0 / .1);
-
-  position: relative;
-  left: 17em;
-  bottom: -1em;
-}
-
-button p {
-  position: relative;
-  top: 2.7em;
-  text-align: center;
-  color: ..;
+    /* diepte gameboy */
+    z-index:1;
 }
 
 
 
-/* VIERKANTE BUTTON MET BEHULP VAN INTERNET ... URL*/
-.wrapper {
-  position: absolute;
-  height: 7.5em;
-  width:7.5em;
-  top: 22em;
-  left: 2em;
-
-  filter: drop-shadow(7px 5px 5px #777);
-
-  /* background-color: red; */
-}
-
-/* button wrappers */
-.wrapper > div {
-  width: 2.5em;
-  height: 2.5em;
-  position: absolute;
-
-  display: grid;
-  place-items: center center;
-  background-color: var(--linker-button-kleur);
-}
-
-.center {
-  top: 2.5em;
-  left:2.5em;
-}
-
-.right {
-  top: 2.5em;
-  left: 5em;
-  border-radius: 0 25% 25% 0;
-}
-
-.left {
-  top: 2.5em;
-  left: 0em;
-  border-radius: 25% 0 0 25%;
-}
-
-.down {
-  top: 5em;
-  left: 2.5em;
-  border-radius: 0 0 25% 25%;
-}
-
-.up {
-  left: 2.5em;
-  border-radius: 25% 25% 0 0;
-}
-
-/* buttons */
-.wrapper button {
-  background-color: transparent;
-  border: none;
-  color: transparent; 
-}
-
-.center-circle {
-  border-radius: 100%;
-  width: 75%;
-  height: 75%;
+/***************/
+/* LOGO GAMEBOY */
+/***************/
+.logonintendo {
+  position:relative;
+  width:150px;
+  height:auto;
+  top:.8em;
 }
 
 
 
-/* SCHERMPJE */
+/***************/
+/* SCHERM GAMEBOY */
+/***************/
 section.scherm {
+   /* grootte van het beeldscherm */
   height:15em;
-  
+  position:relative;
+
+   /* img valt in het scherm */
+  overflow:hidden;
   background-color:rgb(102 115 128);
+
   /* https://9elements.github.io/fancy-border-radius */
   border-radius:1em 1em 4em 1em / 1em 1em 2.5em 1em;
+ 
   /* https://html-css-js.com/css/generator/box-shadow/ */
-  box-shadow:
+    box-shadow:
     inset -.1em -.1em .1em rgb(240 240 240),
     inset .1em .1em .1em rgb(51 58 64);
 }
 
+ol {
+  margin:0;
+  padding:0;
+
+  /* zorgt ervoor dat het scrollbaar wordt binnen de hoogte van het element zelf (hiervoor had ik overflow:hidden dan kan je nog niet scrollen*/
+  overflow:scroll;
+
+  /* tijdens scrollen valt beeld vast in frame (y-as) */
+  scroll-snap-type: y mandatory;
+  
+  height:100%;
+}
+
 ol li {
-  list-style-type: none;
-  /*list items verbergen */
+  height:100%;
+  position:relative;
+  /* alles wat er buiten valt haalt die weg */
+  overflow:hidden;
+  
+  /* border-radius:1em 1em 4em 1em / 1em 1em 3.9em 1em; */
+  /* https://html-css-js.com/css/generator/box-shadow/ */
+  /* box-shadow:
+    inset -.1em -.1em .1em rgb(240 240 240),
+    inset .1em .1em .1em rgb(51 58 64); */
+    scroll-snap-align:center;
+
+    /*list items verbergen */
+    list-style-type:none;
+  }
+
+ol li img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+ol li:nth-of-type(1) img:nth-of-type(1) {
+  /* mario 1 1985*/
+  height:2em;
+  object-fit:contain;
+  position:absolute;
+  left:-11em;
+  bottom:2.2em;
+
+  animation-name:mario1;
+  animation-duration:7s;
+  animation-iteration-count:infinite;
+}
+
+ol li:nth-of-type(1) img:nth-of-type(2) {
+  /* pipe 1 */
+  height:2em;
+  object-fit:contain;
+  position:absolute;
+  left:7em;
+  bottom:2.2em;
+}
+
+ol li:nth-of-type(2) img:nth-of-type(1) {
+    /* mario 2 1991 */
+  height:2em;
+  object-fit:contain;
+  position:absolute;
+  left:-11em;
+  bottom:7em;
+
+  animation-name:mario2;
+  animation-duration:3s;
+  animation-iteration-count:infinite;
+}
+
+ol li:nth-of-type(2) img:nth-of-type(2) {
+  /* pipe 2 */
+  height:2em;
+  object-fit:contain;
+  position:absolute;
+  left:-4em;
+  bottom:1.46em;
+}
+
+ol li:nth-of-type(3) img:nth-of-type(1) {
+  /* mario 3 2009 */
+  height: 2.5em;
+  object-fit:contain;
+  position:absolute;
+  left:-11em;
+  bottom:5em;
+
+  animation-name:mario3;
+  animation-duration:7.5s;
+  animation-iteration-count:infinite;
+}
+
+ol li:nth-of-type(3) img:nth-of-type(2) {
+  /* flower */
+  height: 2.2em;
+  object-fit:contain;
+  position:absolute;
+  left:-.6em;
+  bottom:4.5em;
+
+  animation-name:flower;
+  animation-duration:7s;
+  animation-iteration-count:infinite;
+}
+
+ol li:nth-of-type(3) img:nth-of-type(3) {
+  /* pipe 3 */
+  height: 4.5em;
+  object-fit:contain;
+  position:absolute;
+  left:-.6em;
+  bottom:0em;
+}
+
+
+
+/***************/
+/* BUTTONS */
+/***************/
+section.rondeKnop1 button {
+  background-color: var(--ronde-buttons-kleur);
+  width:3em;
+  height:3em;
+  border-radius:50%;
+  aspect-ratio:1/1;
+  border-style:none;
+  box-shadow:
+  inset -.25em -.25em .25em #5e203d,
+  inset .25em .25em .25em #e2abc3,
+  .5em .5em .5em rgb(0 0 0 / .1);
+
+  position:relative;
+  left:20em;
+  bottom:-1em;
+  transition:.3s;
+}
+
+section.rondeKnop1 button:hover {
+  /* styling ronde button1 hover state */
+  background-color: var(--ronde-buttons-kleur-hover);
+  box-shadow:
+  inset -.25em -.25em .25em rgb(255 255 255 /0.3),
+  inset .25em .25em .25em rgb(0 0 0 /0.3);
+}
+
+section.rondeKnop1 button:focus {
+  /* styling ronde button1 focus state */
+  background-color: var(--ronde-buttons-kleur-hover);
+  box-shadow:
+  inset -.25em -.25em .25em rgb(255 255 255 /0.3),
+  inset .25em .25em .25em rgb(0 0 0 /0.3);
+  outline: none;    
+}
+
+section.rondeKnop2 button {
+  background-color: var(--ronde-buttons-kleur);
+  width:3em;
+  height:3em;
+  border-radius:50%;
+  aspect-ratio:1/1;
+  border-style:none;
+  box-shadow:
+  inset -.25em -.25em .25em #5e203d,
+  inset .25em .25em .25em #e2abc3,
+  .5em .5em .5em rgb(0 0 0 / .1);
+
+  position:relative;
+  left:17em;
+  bottom:-1em;
+}
+
+section.rondeKnop2 button:hover {
+  /* styling ronde button2 hover state */
+  background-color: var(--ronde-buttons-kleur-hover);
+  box-shadow:
+  inset -.25em -.25em .25em rgb(255 255 255 /0.3),
+  inset .25em .25em .25em rgb(0 0 0 /0.3);
+}
+
+section.rondeKnop2 button:focus {
+  /* styling ronde button2 focus state */
+  background-color: var(--ronde-buttons-kleur-hover);
+  box-shadow:
+  inset -.25em -.25em .25em rgb(255 255 255 /0.3),
+  inset .25em .25em .25em rgb(0 0 0 /0.3);
+  outline: none;    
+}
+
+button p {
+  /* a/b positioneren ten opzichte van knop */
+  position:relative;
+  top:2.7em;
+  text-align:center;
+  color:var(--nintendo-logo-kleur);
+}
+
+button:focus p {
+/* styling p focus state */
+background-color: var;(--nintendo-logo-kleur);
+font-weight:bold;
+outline: none;
+}
+
+/* vierkante button*/
+.wrapper {
+  position:absolute;
+  height:7.5em;
+  width:7.5em;
+  top:22em;
+  left:2em;
+  filter:drop-shadow(7px 5px 5px #777);
+}
+
+/* button wrappers */
+.wrapper > div {
+  width:2.5em;
+  height:2.5em;
+  position:absolute;
+
+  display:grid;
+  place-items:center center;
+  background-color:var(--linker-button-kleur);
+}
+
+.center {
+  top:2.5em;
+  left:2.5em;
+}
+
+.right {
+  top:2.5em;
+  left:5em;
+  border-radius: 0 25% 25% 0;
+}
+
+.left {
+  top:2.5em;
+  left:0em;
+  border-radius: 25% 0 0 25%;
+}
+
+.down {
+  top:5em;
+  left:2.5em;
+  border-radius: 0 0 25% 25%;
+}
+
+.up {
+  left:2.5em;
+  border-radius: 25% 25% 0 0;
+}
+
+.wrapper button {
+  background-color:transparent;
+  border:none;
+  color:transparent; 
+}
+
+.center-circle {
+  border-radius:100%;
+  width:75%;
+  height:75%;
+}
+
+div.wrapper button:hover {
+  /* styling hover state */
+  background-color: var(--vierkante-button-kleur-hover);
+  box-shadow:
+  inset -.25em -.25em .25em rgb(255 255 255 /0.3),
+  inset .25em .25em .25em rgb(0 0 0 /0.3);
+}
+
+div.wrapper button:focus {
+  /* styling focus/tab state */
+  background-color: var(--vierkante-button-kleur-hover);
+  box-shadow:
+  inset -.25em -.25em .25em rgb(255 255 255 /0.3),
+  inset .25em .25em .25em rgb(0 0 0 /0.3);
+  outline: none;
+}
+
+
+/***************/
+/* ANIMATIES */
+/***************/
+
+/* mario level 1 */
+@keyframes mario1 {
+  0% {
+    transform: translate(0,0);
+  } 
+  10% {
+    transform: translate(5em,0);
+  } 
+  20% {
+    transform: translate(6em,-6em);
+  } 
+  30% {
+    transform: translate(7.5em,-4.75em);
+  } 
+  40% {
+    transform: translate(9em,-4.75em);
+  } 
+  50% {
+    transform: translate(10em,-7em);
+  } 
+  60% {
+    transform: translate(12em,-4.75em);
+  } 
+  70% {
+    transform: translate(14em,-6em);
+  } 
+  80% {
+    transform: translate(15em,0em);
+  }
+  90% {
+    transform: translate(17.3em,-3em);
+  }
+  100% {
+    transform: translate(18em,0em);
+  }
+}
+
+/* mario level 2 */
+@keyframes mario2 {
+  0% {
+    transform: translate(0,0) scale(-1, 1);
+  } 
+  20% {
+    transform: translate(3em,0) scale(-1, 1);
+  }
+  40% {
+    transform: translate(4em,-2em) scale(-1, 1);
+  }
+  60% {
+    transform: translate(5.2em,-0.4em) scale(-1, 1);
+  }
+  80% {
+    transform: translate(7em,-0.4em) scale(-1, 1);
+  }
+  100% {
+    transform: translate(8em,-4em) scale(-1, 1);
+  }
+}
+
+/* flower in en uit level 3 */
+@keyframes flower {
+  0% {
+    transform: translate(0,0);
+  } 
+  40% {
+    transform: translate(0,0);
+  }
+  80% {
+    transform: translate(0,10em);
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}
+
+/* mario level 3 */
+@keyframes mario3 {
+    0% {
+      transform: translate(0,0);
+    } 
+    10% {
+      transform: translate(2.5em,0);  
+      animation-timing-function: ease-out;      
+      }
+    20% {
+      transform: translate(6.5em,-6.8em);    
+      animation-timing-function: ease-in;    
+        }
+    25% {
+      transform: translate(8.5em,-5.5em);   
+      animation-timing-function: linear;     
+        }
+    30% {
+      transform: translate(11em,-5.5em);  
+      animation-timing-function: ease-out; 
+        }
+    40% {
+      transform: translate(14.5em,-7.5em);     
+      animation-timing-function: ease-in;  
+        }
+    50% {
+      transform: translate(19.5em,-3.7em);       
+        }
+    60% {
+      transform: translate(19.5em,-3.7em) scale(-1, 1);       
+        }
+    70% {
+      transform: translate(17em,-4.5em) scale(-1, 1);
+        }
+    80% {
+      transform: translate(16.5em,3.5em) scale(-1, 1);
+        }
+    90% {
+      transform: translate(16.5em,3.5em);
+      animation-timing-function: linear;
+        }
+    100% {
+      transform: translate(22em,3.5em);
+        }
+  }
+
+/* background animation*/
+@keyframes backgroundanimation {
+  0% {
+    background-position:0 0;
+  } 
+  100% {
+    background-position:-1000vw 0;
+  } 
 }
