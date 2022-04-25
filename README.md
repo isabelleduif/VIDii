@@ -10,13 +10,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-## Jij
+## Isabelle Duivenvoorden
 
 ### Ontwerper:
-Sanne 't Hooft (vervangen door jouw naam)
+Isabelle Duivenvoorden
 
 #### Je startniveau:
-Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
+Mijn startniveau is: blauw
 
 
 
@@ -28,15 +28,15 @@ Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
   <summary>De eerste versie/schets van je ontwerp & je persoonlijke uitdaging</summary>
 
   ### De eerste versie/schets:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="eerste versie/schets">
+  <img src="readme-images/conceptschets.jpg" width="375px" alt="eerste versie/schets">
 
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - leren animeren in CSS
+  - leren meer diepte te creëren in mijn designs met shadows, om het zo realistisch mogelijk te laten lijken
+  - overzichtelijke en duidelijke structuur leren aanbrengen in mijn code
+  - 
  
 </details>
 
@@ -46,27 +46,26 @@ Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
 ## Voortgang/Feedback 1
 
 <details>
-  <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
+  <summary>Tijdens de eerste feedback sessie heb ik voornamelijk mijn concept aangescherpt. Het concept is goed genoeg om mee verder te gaan. Samen met Timo heb ik nagedacht over de transities tussen de verschillende games/schermen. Ik twijfelde tussen transitie van links naar rechts, of van boven naar beneden. Aangezien ik Mario door verschillende buizen wil laten  verplaatsen, is het het meest logisch om het scherm verticaal (boven > beneden) te laten bewegen. 
+    
+Feedback Timo: Hou het realistisch, je hebt weinig tijd. Leuk idee om allemaal versies van Mario en Mario spellen te laten zien. Je kan Z-index gebruiken in de css voor diepte. Voor detail zou ik de andere beestjes in het spel ook laten bewegen. Je kan per spel ook kijken of het console veranderd. Denk goed na over welke animatie je gaat toepassen per knop. Zorg dat er een duidelijke volgende stap is.
+    
 
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
-
-  #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
-
+  Interactie van mijn prototype door middel van scrollen. Dit wellicht later aanpassen naar klikken door buttons.
 
   ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
-
-  #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
-
-
+  Transitie van het scherm wordt van boven naar beneden (verschillende spellen uit steeds een moderner tijdperk)
 
   ### Bevinding 3:
+  Niet alleen Mario, maar ook kleine details in de spellen animeren voor extra interactie.
+    
+  ### Bevinding 4:
   ...
 
+  ### Bevinding 5:
+  ...
+    
 </details>
 
 
@@ -75,10 +74,13 @@ Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
 ## Voortgang/Feedback 2
 
 <details>
-  <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
+  <summary>Na afgelopen keer heb ik het een en ander gewijzigd aan mijn concept. In plaats van Mario door de buizen laten verplaatsen en vervolgens automatisch doorschuiven naar het volgende beeld, ga ik de gebruiker laten scrollen door de verschillende schermpjes. Dit was wat betreft code beter haalbaar voor mij. Ik maak drie verschillende schermen waarin drie verschillende games in te zien zijn, allemaal uit een ander jaartal (1985 - 1991 - 2009). Na 2009 zijn er geen hele grote wijzigingen meer doorgevoerd in het karakter van Mario. Verder heb ik een bijpassende achtergrond toegebvoegd die ik wil laten bewegen. Ik ga kijken hoe ik de wolkjes langzaam kan laten bewegen, zodat er iets meer interactie is. Hieronder staan nog een aantal belangrijke punten beschreven die niet in orde. Deze punten heb ik uiteindelijk kunnen oplossen door de juiste code te gebruiken.(minimaal 5)</summary>
   
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  Na het plaatsen van een img in het scherm van de gameboy kreeg ik deze niet netjes in het kader geplaatst. Dit heb ik opgelost door overflow:hidden te gebruiken. Zie foto's van before en after.
+  
+  <img width="1213" alt="1 1" src="https://user-images.githubusercontent.com/55750165/164761563-1728350c-6c14-47b6-bd92-3b5a5ebfacc2.png">
+
 
   #### oplossing:
   Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
@@ -161,8 +163,15 @@ Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. https://www.europosters.nl/posters/super-mario-bros-1-1-v24059
+2. https://www.keepitkrute.top/ProductDetail.aspx?iid=475931990&pr=44.88 
+3. https://logos-world.net/super-mario-logo/ 
+4. https://www.pngplay.com/nl/image/265146
+5. https://mario.fandom.com/wiki/Piranha_Plant
+6. https://stackoverflow.com/questions/37903824/how-can-i-make-infinite-flowing-background-with-only-css
+7. https://www.logolynx.com/topic/nintendo+game+boy
+8. https://codepen.io/thefewunshaken/pen/bjYWvB
+9. https://www.logolynx.com/topic/nintendo+game+boy
+10.https://www.fontspace.com/super-plumber-brothers-font-f9287
 
 </details>
