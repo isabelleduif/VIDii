@@ -36,7 +36,7 @@ Mijn startniveau is: blauw
   - leren animeren in CSS
   - leren meer diepte te creëren in mijn designs met shadows, om het zo realistisch mogelijk te laten lijken
   - overzichtelijke en duidelijke structuur leren aanbrengen in mijn code
-  - algemen kennis van HTML en CSS opfrissen
+  - algemene kennis van HTML en CSS opfrissen
  
 </details>
 
@@ -141,13 +141,16 @@ Feedback Timo: Hou het realistisch, je hebt weinig tijd. Leuk idee om allemaal v
   
 
 <details>
-  <summary>De laatste stappen die ik in mijn website heb doorgevoerd zijn in plaats van het scrollen door de schermen, de buttons klikbaar maken. Verder heb ik gekeken naar hoe ik de wolkjes in de background image langzaam kan laten bewegen, zodat er net iets meer interactie is. Om wat extra uitleg te geven aan mijn website heb ik rechtsbovenin een 'info'-button toegevoegd waarop de gebruiker kan klikken. En als laatste onderdeel heb ik per scherm het jaartal van de game toegevoegd, die mee veranderd wanneer je door de schermen klikt. Verder hieronder nog een aantal extra punten waar ik tegenaan liep en hoe ik dit vervolgens heb opgelost.</summary>
+  <summary>De laatste stappen die ik in mijn website heb doorgevoerd zijn in plaats van het scrollen door de schermen, de buttons klikbaar maken. Verder heb ik gekeken naar hoe ik de wolkjes in de background image langzaam kan laten bewegen, zodat er net iets meer interactie is. Om wat extra uitleg te geven aan mijn website heb ik rechtsbovenin een 'info'-button toegevoegd waarop de gebruiker kan klikken. En als laatste onderdeel heb ik per scherm het jaartal van de game toegevoegd, die mee veranderd wanneer je door de schermen klikt. Verder hieronder nog een aantal extra punten waar ik tegenaan liep en hoe ik dit vervolgens heb opgelost.
+  
+Feedback Rowin:
+States toevoegen aan de info buttons. Bijvoorbeeld zodat je kan zien dat de info-button klikbar is (cursor:pointer;), :hover state, :focus state. 
+Ook zou je wanneer je de info-button nog kunnen aanpassen naar een kruisje om het tekstvak weer te sluiten.</summary>
   
   ### Bevinding 1:
   De jaartallen onderin het scherm passen niet erg mooi in de rest van het design. Na feedback gekregen te hebben van Rowin heb ik besloten om er een box shadow achter te plaatsen.
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
   
   <img src="readme-images/4.1boxshadow.png" width="375px" alt="">
   <img src="readme-images/4.2boxshadow.png" width="375px" alt="">
@@ -168,9 +171,29 @@ Feedback Timo: Hou het realistisch, je hebt weinig tijd. Leuk idee om allemaal v
 
 
   ### Bevinding 3:
-  De vierkante button in mijn gameboy heb ik uiteindelijk met behulp van code van internet kunnen coderen. De onderdelen van deze button zijn allemaal in losse div'jes geplaatst. In plaats van div'jes te gebruiken had deze code ook geschreven kunnen worden door een unordered list (ul) en list items te gebruiken. Uiteindelijk heb ik de code niet hiernaar aangepast, omdat de code in mijn CSS anders niet meer klote. Wel was dit achteraf gezien netter geweest. 
+  De vierkante button in de gameboy heb ik uiteindelijk met behulp van code van internet kunnen coderen. De onderdelen van deze button zijn allemaal in losse div'jes geplaatst. In plaats van div'jes te gebruiken had deze code ook geschreven kunnen worden door een unordered list (ul) en list items te gebruiken. Uiteindelijk heb ik de code niet hiernaar aangepast, omdat de code in mijn CSS anders niet meer werkte. Wel was dit achteraf gezien netter geweest qua code. 
   
   <img src="readme-images/6.1vierkantebutton.png" width="375px" alt="codekapot3">
+  
+  
+  
+    ### Bevinding 4:
+  Wanneer je op de info button klikt komt er een tekst tevoorschijn. De info button blijft nog hetzelfde, maar het is mooier als deze verandert in een kruisje. Wanneer de 'i' in een kruisje verandert is het duidelijker voor de gebruiker om het tekstkader te verbergen.
+  
+    #### oplossing:
+  Deze code is geschreven in Javascript. Zie afbeelding hieronder.
+  
+  <img src="readme-images/9.1kruisjebutton.png" width="375px" alt="">
+  
+  
+  
+      ### Bevinding 5:
+  De info button heeft nog geen states, zoals de buttons in de gameboy. Na de feedback van Rowin heb ik dit toegevoegd.
+  
+    #### oplossing:
+  Ik heb een :hover , :focus , en cursor:pointer state toegevoegd.
+  
+  <img src="readme-images/10.1states.png" width="375px" alt="">
 
 </details>
 
@@ -186,18 +209,18 @@ Feedback Timo: Hou het realistisch, je hebt weinig tijd. Leuk idee om allemaal v
   <img src="readme-images/8.1finalgame1.png" width="375px" alt="final ontwerp">
   <img src="readme-images/8.2finalgame2.png" width="375px" alt="final ontwerp">
   <img src="readme-images/8.3finalgame3.png" width="375px" alt="final ontwerp">
-  <img src="readme-images/8.3finalinfo.png" width="375px" alt="final ontwerp">
+  <img src="readme-images/8.4finalinfo.png" width="375px" alt="final ontwerp">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Tijdens het vak Interface & Interactie de afgelopen twee weken heb ik een hele hoop geleerd. Ten eerste is mijn kennis wat betreft HTML en CSS flink opgefrist. Ook heb veel bijgeleerd en mijzelf weer een stuk weten te ontwikkelen. Ik begin de codetaal steeds beter te begrijpen, vooral omdat ik er elke dag intensief mee bezig ben geweest. Samen met klasgenoten in de medialounge zitten na de les is ook zeker verstandig geweest tijdens dit vak, aangezien je thuis al snel vast kan lopen. We hebben dus ook veel van elkaar kunnen leren! Waar ik vooral trots op ben is dat ik heb leren animeren in CSS, ik had nooit verwacht dat mij dit zou lukken! 
+  Tijdens het vak Interface & Interactie de afgelopen twee weken heb ik een hele hoop geleerd. Ten eerste is mijn kennis wat betreft HTML en CSS flink opgefrist en vooruitgegaan. Ik begin de codetaal steeds beter te begrijpen, vooral omdat ik er elke dag intensief mee bezig ben geweest. Samen met klasgenoten in de medialounge zitten na de les is ook zeker verstandig geweest tijdens dit vak, aangezien je thuis al snel vast kan lopen. We hebben dus ook veel van elkaar kunnen leren! Waar ik vooral trots op ben is dat ik heb leren animeren in CSS, ik had nooit verwacht dat mij dit zou lukken! Ook heb ik veel leren werken met de :nth-child(n) selector, wat ik voorheen niet deed en ook niet begreep.
   
   Verder ben ik ook erg tevreden over de look & feel van mijn website. Ik wilde het graag simpel houden en een ouderwets tintje geven, dit is aardig gelukt. De oude gameboy in combinatie met het pixelachtige scherm geeft mij een authentiek gevoel. 
   
 
 
   ### Dit was lastig/Is niet gelukt:
-  Wat ik heel erg lastig vond is het Javascript gedeelte. Hier heb ik hulp bij gekregen door Rowin en Timo. Dankij deze hulp heb ik klikbare knoppen kunnen maken en is mijn ontwerp een stuk verbeterd. Wat ik ook lastig vond is het stylen van de vierkante button. Dankij een voorbeeldcode van internet en hulp van Sanne is dit uiteindelijk ook gelukt. 
+  Wat ik heel erg lastig vond is het Javascript gedeelte. Hier heb ik hulp bij gekregen door Rowin en Timo. Dankij deze hulp heb ik klikbare knoppen kunnen maken en is mijn ontwerp een stuk vooruitgegaan. Wat ik ook lastig vond is het stylen van de vierkante button. Dankij een voorbeeldcode van internet en met hulp van Sanne is dit uiteindelijk ook gelukt. 
   
 </details>
 
@@ -210,7 +233,6 @@ Feedback Timo: Hou het realistisch, je hebt weinig tijd. Leuk idee om allemaal v
 <details open>
 <summary>continu bijhouden terwijl je werkt</summary>
 
-Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
 1. https://www.europosters.nl/posters/super-mario-bros-1-1-v24059
 2. https://www.keepitkrute.top/ProductDetail.aspx?iid=475931990&pr=44.88 
