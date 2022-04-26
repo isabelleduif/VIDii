@@ -209,7 +209,7 @@ Ook zou je wanneer je de info-button nog kunnen aanpassen naar een kruisje om he
   <img src="readme-images/8.1finalgame1.png" width="375px" alt="final ontwerp">
   <img src="readme-images/8.2finalgame2.png" width="375px" alt="final ontwerp">
   <img src="readme-images/8.3finalgame3.png" width="375px" alt="final ontwerp">
-  <img src="readme-images/8.4finalinfo.png" width="375px" alt="final ontwerp">
+  <img src="readme-images/8.4finalinformation.png" width="375px" alt="final ontwerp">
 
 
   ### Dit ging goed/Heb ik geleerd: 
