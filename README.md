@@ -87,8 +87,8 @@ Feedback Timo: Hou het realistisch, je hebt weinig tijd. Leuk idee om allemaal v
   
   <img src="readme-images/1.1.png" width="375px" alt="">
   <img src="readme-images/1.2.png" width="375px" alt="">
-  <img src="readme-images/5.1onderelkaar.png" width="375px" alt="">
-  <img src="readme-images/5.2onderelkaar.png" width="375px" alt="">
+  <img src="readme-images/5.1imgonderelkaar.png" width="375px" alt="">
+  <img src="readme-images/5.2imgonderelkaar.png" width="375px" alt="">
 
 
   
