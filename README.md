@@ -94,7 +94,7 @@ Feedback Timo: Hou het realistisch, je hebt weinig tijd. Leuk idee om allemaal v
   Na het plaatsen van de afbeeldingen in mijn HTML ben ik deze in CSS gaan stylen. Waar ik hierbij ook tegenaan liep was dat de afbeeldingen alle drie    onder elkaar vielen (de eerste binnen het scherm van de gameboy en de andere twee buiten het scherm). 
   
   #### oplossing:
-  Door de overige twee afbeeldingen die buiten het scherm van de gameboy vielen te verbergen heb ik overflow:hidden; gebruikt. 
+  Door de overige twee afbeeldingen die buiten het scherm van de gameboy vielen te verbergen heb ik overflow:hidden; gebruikt.
   
   <img src="readme-images/5.1onderelkaar.png" width="375px" alt="">
   <img src="readme-images/5.2onderelkaar.png" width="375px" alt="">
