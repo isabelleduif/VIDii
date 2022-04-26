@@ -96,8 +96,8 @@ Feedback Timo: Hou het realistisch, je hebt weinig tijd. Leuk idee om allemaal v
   #### oplossing:
   Door de overige twee afbeeldingen die buiten het scherm van de gameboy vielen te verbergen heb ik overflow:hidden; gebruikt. 
   
-  <img src="readme-images/5.1-onderelkaar.png" width="375px" alt="">
-  <img src="readme-images/5.2-onderelkaar.png" width="375px" alt="">
+  <img src="readme-images/5.1.onderelkaar.png" width="375px" alt="">
+  <img src="readme-images/5.2.onderelkaar.png" width="375px" alt="">
  
   
   
@@ -118,14 +118,14 @@ Feedback Timo: Hou het realistisch, je hebt weinig tijd. Leuk idee om allemaal v
 
 
   ### Bevinding 5:
-  Een belangrijk leermoment voor mij waardoor mijn code crashte was doordat ik voor mijzelf had genoteerd dat ik ergens nog een bepaalde bron moest vermelden. Doordat ik deze comment niet op de juiste manier heb geplaatst werkte mijn code niet meer.
+  Nog een ander belangrijk leermoment voor mij waardoor mijn code crashte; ik had voor mijzelf in mijn code genoteerd dat ik nog een bepaalde bron moest vermelden. Doordat ik deze tekst niet in een comment had geplaatst werkte mijn code niet meer.
   
   #### oplossing:
   Wanneer je eigen geschreven tekst vergeet in een comment te plaatsen, wordt alle code daaronder onleesbaar. Dit deel van mijn website viel daardoor weg.
   
-    <img src="readme-images/3.1-codekapot.png" width="375px" alt="codekapot1">
-    <img src="readme-images/3.2-codekapot.png" width="375px" alt="codekapot2">
-    <img src="readme-images/3.3-codekapot.png" width="375px" alt="codekapot3">
+    <img src="readme-images/3.1.codekapot.png" width="375px" alt="codekapot1">
+    <img src="readme-images/3.2.codekapot.png" width="375px" alt="codekapot2">
+    <img src="readme-images/3.3.codekapot.png" width="375px" alt="codekapot3">
 
 </details>
 
@@ -136,7 +136,7 @@ Feedback Timo: Hou het realistisch, je hebt weinig tijd. Leuk idee om allemaal v
   
 
 <details>
-  <summary>De laatste grote stappen die ik aan mijn website heb aangepast/toegevoegd zijn in plaats van het scrollen door de schermen de buttons klikbaar maken. Verder heb ik gekeken naar hoe ik de wolkjes in de background image langzaam kan laten bewegen, zodat er iets meer interactie is. En als laatste onderdeel heb ik per scherm het jaartal van de game toegevoegd, die mee veranderd wanneer je door de schermen klikt. Verder hieronder nog een aantal extra punten waar ik tegenaan liep en hoe ik dit heb opgelost.</summary>
+  <summary>De laatste stappen die ik in mijn website heb doorgevoerd zijn in plaats van het scrollen door de schermen, de buttons klikbaar maken. Verder heb ik gekeken naar hoe ik de wolkjes in de background image langzaam kan laten bewegen, zodat er net iets meer interactie is. Om wat extra uitleg te geven aan mijn website heb ik rechtsbovenin een 'info'-button toegevoegd waarop de gebruiker kan klikken. En als laatste onderdeel heb ik per scherm het jaartal van de game toegevoegd, die mee veranderd wanneer je door de schermen klikt. Verder hieronder nog een aantal extra punten waar ik tegenaan liep en hoe ik dit heb opgelost.</summary>
   
   ### Bevinding 1:
   Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
@@ -155,7 +155,9 @@ Feedback Timo: Hou het realistisch, je hebt weinig tijd. Leuk idee om allemaal v
 
 
   ### Bevinding 3:
-  ...
+  De vierkante button in mijn gameboy heb ik uiteindelijk met behulp van code van internet kunnen coderen. De onderdelen van deze button zijn allemaal in losse div'jes geplaatst. In plaats van div'jes te gebruiken had deze code ook geschreven kunnen worden door een unordered list (ul) en list items te gebruiken. Uiteindelijk heb ik de code niet hiernaar aangepast, omdat de code in mijn CSS anders niet meer klote. Wel was dit achteraf gezien netter geweest. 
+  
+  <img src="readme-images/3.3.codekapot.png" width="375px" alt="codekapot3">
 
 </details>
 
