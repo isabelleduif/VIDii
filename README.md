@@ -182,19 +182,22 @@ Feedback Timo: Hou het realistisch, je hebt weinig tijd. Leuk idee om allemaal v
   <summary>Mijn eindresultaat & persoonlijke ontwikkeling</summary>
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="final ontwerp">
+  <img src="readme-images/8.1finalgame1.png" width="375px" alt="final ontwerp">
+  <img src="readme-images/8.2finalgame2.png" width="375px" alt="final ontwerp">
+  <img src="readme-images/8.3finalgame3.png" width="375px" alt="final ontwerp">
+  <img src="readme-images/8.3finalinfo.png" width="375px" alt="final ontwerp">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatje(s)
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Tijdens het vak Interface & Interactie de afgelopen twee weken heb ik een hele hoop geleerd. Ten eerste is mijn kennis wat betreft HTML en CSS flink opgefrist. Ook heb veel bijgeleerd en mijzelf weer een stuk weten te ontwikkelen. Ik begin de codetaal steeds beter te begrijpen, vooral omdat ik er elke dag intensief mee bezig ben geweest. Samen met klasgenoten in de medialounge zitten na de les is ook zeker verstandig geweest tijdens dit vak, aangezien je thuis al snel vast kan lopen. We hebben dus ook veel van elkaar kunnen leren! Waar ik vooral trots op ben is dat ik heb leren animeren in CSS, ik had nooit verwacht dat mij dit zou lukken! 
+  
+  Verder ben ik ook erg tevreden over de look & feel van mijn website. Ik wilde het graag simpel houden en een ouderwets tintje geven, dit is aardig gelukt. De oude gameboy in combinatie met het pixelachtige scherm geeft mij een authentiek gevoel. 
+  
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatje(s)
-
-  <img src="readme-images/dummy-plaatje.jpg" width="400px" alt="bummer">
+  Wat ik heel erg lastig vond is het Javascript gedeelte. Hier heb ik hulp bij gekregen door Rowin en Timo. Dankij deze hulp heb ik klikbare knoppen kunnen maken en is mijn ontwerp een stuk verbeterd. Wat ik ook lastig vond is het stylen van de vierkante button. Dankij een voorbeeldcode van internet en hulp van Sanne is dit uiteindelijk ook gelukt. 
+  
 </details>
 
 
