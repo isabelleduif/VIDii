@@ -160,9 +160,9 @@ Feedback Timo: Hou het realistisch, je hebt weinig tijd. Leuk idee om allemaal v
   #### oplossing:
   Zie code in bijgevoegde afbeelding. 
   
-    <img src="readme-images/7.2boxshadowinside.png" width="375px" alt="">
+    <img src="readme-images/7.2boxshadowinside.png" width="375px" alt="hi">
     <img src="readme-images/7.3boxshadowinside.png" width="375px" alt="">
-    <img src="" alt="">
+    <img src="readme-images/7.1boxshadowinside.png" width="375px" alt="">
 
 
 
