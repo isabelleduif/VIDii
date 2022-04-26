@@ -73,7 +73,7 @@ body {
 
 /* moving background bron code https://stackoverflow.com/questions/37903824/how-can-i-make-infinite-flowing-background-with-only-css  */
 .backgroundwebsite {
-  background-image:url("/images/backgroundwebsite.jpg");
+  background-image:url("../images/backgroundwebsite.jpg");
   background-size:auto 100%;
   background-repeat:repeat;
   background-position: 0 0;
