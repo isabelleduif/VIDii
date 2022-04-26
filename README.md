@@ -77,36 +77,53 @@ Feedback Timo: Hou het realistisch, je hebt weinig tijd. Leuk idee om allemaal v
   <summary>Na afgelopen keer heb ik het een en ander gewijzigd aan mijn concept. In plaats van Mario door de buizen laten verplaatsen en vervolgens automatisch doorschuiven naar het volgende beeld, ga ik de gebruiker laten scrollen door de verschillende schermpjes. Dit was wat betreft code beter haalbaar voor mij. Ik maak drie verschillende schermen waarin drie verschillende games in te zien zijn, allemaal uit een ander jaartal (1985 - 1991 - 2009). Na 2009 zijn er geen hele grote wijzigingen meer doorgevoerd in het karakter van Mario. Verder heb ik een bijpassende achtergrond toegebvoegd die ik wil laten bewegen. Ik ga kijken hoe ik de wolkjes langzaam kan laten bewegen, zodat er iets meer interactie is. Hieronder staan nog een aantal belangrijke punten beschreven die niet in orde. Deze punten heb ik uiteindelijk kunnen oplossen door de juiste code te gebruiken.(minimaal 5)</summary>
   
   
-  ### Bevinding 2:
-  De img valt niet netjes in de vorm van het schermpje.
+  ### Bevinding 1:
+  Na het plaatsen van een img in het scherm van de gameboy kreeg ik deze niet netjes in het kader geplaatst.
   
   #### oplossing:
   Dit heb ik kunnen oplossen door overflow:hidden; te gebruiken. 
   
   <img src="readme-images/1.1.png" width="375px" alt="">
   <img src="readme-images/1.2.png" width="375px" alt="">
+
+
   
-  ### Bevinding 1:
-  Na het plaatsen van een img in het scherm van de gameboy kreeg ik deze niet netjes in het kader geplaatst. Dit heb ik opgelost door overflow:hidden te gebruiken. Zie foto's van before en after.
-  
-  <img width="1213" alt="1 1" src="https://user-images.githubusercontent.com/55750165/164761563-1728350c-6c14-47b6-bd92-3b5a5ebfacc2.png">
-
-
-  #### oplossing:
-  Dit heb ik uiteindelijk kunnen oplossen door overflow:hidden te gebruiken.
-
-
-
   ### Bevinding 2:
-  Tijdens het scrollen door de verschillende schermen snapte het scherm niet netjes vast op één punt. 
+  Na het plaatsen van de afbeeldingen in mijn HTML ben ik deze in CSS gaan stylen. Waar ik hierbij ook tegenaan liep was dat de afbeeldingen alle drie    onder elkaar vielen (de eerste binnen het scherm van de gameboy en de andere twee buiten het scherm). 
   
   #### oplossing:
-  Door scroll-snap-type: y mandatory; te gebruiken. --> y zodat het beeld vast valt in het frame op de y-as.
-
-
-
+  Door de overige twee afbeeldingen die buiten het scherm van de gameboy vielen te verbergen heb ik overflow:hidden; gebruikt. 
+  
+  <img src="readme-images/5.1-onderelkaar.png" width="375px" alt="">
+  <img src="readme-images/5.2-onderelkaar.png" width="375px" alt="">
+ 
+  
+  
   ### Bevinding 3:
-  ...
+  Na het plaatsen van de drie verschillende images wilde ik deze graag scrollbaar maken.
+  
+  #### oplossing:
+  Om door de afbeeldingen te kunnen scrollen heb ik overflow:scroll; gebruikt. Dit zorgt er dus voor dat het scrollbaar wordt binnen de hoogte van het element zelf (de partent (schermpje vd gameboy) waar de img in is geplaatst. 
+
+  
+  
+  ### Bevinding 4:
+  Tijdens het scrollen door de verschillende schermen snapte het scherm niet netjes vast op één punt.
+  
+  #### oplossing:
+  Dit heb ik opgelost door scroll-snap-type: y mandatory; te gebruiken. --> y zodat het beeld vast valt in het frame op de y-as.
+
+
+
+  ### Bevinding 5:
+  Een belangrijk leermoment voor mij waardoor mijn code crashte was doordat ik voor mijzelf had genoteerd dat ik ergens nog een bepaalde bron moest vermelden. Doordat ik deze comment niet op de juiste manier heb geplaatst werkte mijn code niet meer.
+  
+  #### oplossing:
+  Wanneer je eigen geschreven tekst vergeet in een comment te plaatsen, wordt alle code daaronder onleesbaar. Dit deel van mijn website viel daardoor weg.
+  
+    <img src="readme-images/3.1-codekapot.png" width="375px" alt="codekapot">
+    <img src="readme-images/3.2-codekapot.png" width="375px" alt="codekapot">
+    <img src="readme-images/3.3-codekapot.png" width="375px" alt="codekapot">
 
 </details>
 
