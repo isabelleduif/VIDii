@@ -74,7 +74,9 @@ Feedback Timo: Hou het realistisch, je hebt weinig tijd. Leuk idee om allemaal v
 ## Voortgang/Feedback 2
 
 <details>
-  <summary>Na afgelopen keer heb ik het een en ander gewijzigd aan mijn concept. In plaats van Mario door de buizen laten verplaatsen en vervolgens automatisch doorschuiven naar het volgende beeld, ga ik de gebruiker laten scrollen door de verschillende schermpjes. Dit was wat betreft code beter haalbaar voor mij. Ik maak drie verschillende schermen waarin drie verschillende games in te zien zijn, allemaal uit een ander jaartal (1985 - 1991 - 2009). Na 2009 zijn er geen hele grote wijzigingen meer doorgevoerd in het karakter van Mario. Verder heb ik een bijpassende achtergrond toegebvoegd die ik wil laten bewegen. Ik ga kijken hoe ik de wolkjes langzaam kan laten bewegen, zodat er iets meer interactie is. Hieronder staan nog een aantal belangrijke punten beschreven die niet in orde. Deze punten heb ik uiteindelijk kunnen oplossen door de juiste code te gebruiken.(minimaal 5)</summary>
+  <summary>Na feedbackmoment 1 keer heb ik het een en ander gewijzigd aan mijn concept. In plaats van Mario door de buizen te laten verplaatsen en vervolgens automatisch doorschuiven naar het volgende beeld, ga ik de gebruiker laten scrollen door verschillende schermpjes. 
+    
+ Ik maak drie verschillende schermen waarin drie verschillende games te zien zijn, allemaal uit een ander jaartal (1985 - 1991 - 2009). Verder heb ik een background image aan mijn ontwerp toegevoegd om de look & feel passender te maken. Ik heb gekozen voor een rustige achtergrond kleur met subtiele wolkjes. Ik heb erover nagedacht om per image/game de background image mee te laten veranderen, maar uiteindelijk heb ik besloten het toch te laten bij één vaste achtergrond, omdat ik het anders te druk vond worden. Hieronder staan nog een aantal belangrijke punten beschreven die niet in orde. Deze punten heb ik uiteindelijk kunnen oplossen door de juiste code te gebruiken.(minimaal 5)</summary>
   
   
   ### Bevinding 1:
@@ -121,18 +123,20 @@ Feedback Timo: Hou het realistisch, je hebt weinig tijd. Leuk idee om allemaal v
   #### oplossing:
   Wanneer je eigen geschreven tekst vergeet in een comment te plaatsen, wordt alle code daaronder onleesbaar. Dit deel van mijn website viel daardoor weg.
   
-    <img src="readme-images/3.1-codekapot.png" width="375px" alt="codekapot">
-    <img src="readme-images/3.2-codekapot.png" width="375px" alt="codekapot">
-    <img src="readme-images/3.3-codekapot.png" width="375px" alt="codekapot">
+    <img src="readme-images/3.1-codekapot.png" width="375px" alt="codekapot1">
+    <img src="readme-images/3.2-codekapot.png" width="375px" alt="codekapot2">
+    <img src="readme-images/3.3-codekapot.png" width="375px" alt="codekapot3">
 
 </details>
 
 
 
+  
 ## Voortgang/Feedback 3
+  
 
 <details>
-  <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
+  <summary>De laatste grote stappen die ik aan mijn website heb aangepast/toegevoegd zijn in plaats van het scrollen door de schermen de buttons klikbaar maken. Verder heb ik gekeken naar hoe ik de wolkjes in de background image langzaam kan laten bewegen, zodat er iets meer interactie is. En als laatste onderdeel heb ik per scherm het jaartal van de game toegevoegd, die mee veranderd wanneer je door de schermen klikt. Verder hieronder nog een aantal extra punten waar ik tegenaan liep en hoe ik dit heb opgelost.</summary>
   
   ### Bevinding 1:
   Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
