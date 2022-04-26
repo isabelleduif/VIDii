@@ -194,7 +194,7 @@ Feedback Timo: Hou het realistisch, je hebt weinig tijd. Leuk idee om allemaal v
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatje(s)
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/dummy-plaatje.jpg" width="400px" alt="bummer">
 </details>
 
 
