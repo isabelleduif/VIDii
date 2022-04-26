@@ -50,9 +50,9 @@ function openInfo(){
     this.classList.toggle("open");
 
     if (infoButton.classList.contains("open")) {
-        infoImage.src = "../images/kruisje.jpg";
+        infoImage.src = "images/kruisje.jpg";
     } else {
-        infoImage.src = "../images/info.png";
+        infoImage.src = "images/info.png";
     }
 }
 
