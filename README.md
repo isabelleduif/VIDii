@@ -36,7 +36,7 @@ Mijn startniveau is: blauw
   - leren animeren in CSS
   - leren meer diepte te creëren in mijn designs met shadows, om het zo realistisch mogelijk te laten lijken
   - overzichtelijke en duidelijke structuur leren aanbrengen in mijn code
-  - 
+  - algemen kennis van HTML en CSS opfrissen
  
 </details>
 
@@ -55,16 +55,16 @@ Feedback Timo: Hou het realistisch, je hebt weinig tijd. Leuk idee om allemaal v
   Interactie van mijn prototype door middel van scrollen. Dit wellicht later aanpassen naar klikken door buttons.
 
   ### Bevinding 2:
-  Transitie van het scherm wordt van boven naar beneden (verschillende spellen uit steeds een moderner tijdperk)
+  Transitie van het scherm wordt van boven naar beneden (verschillende spellen uit steeds een moderner tijdperk).
 
   ### Bevinding 3:
   Niet alleen Mario, maar ook kleine details in de spellen animeren voor extra interactie.
     
   ### Bevinding 4:
-  ...
+  Goed idee om later een leuke background image toe te voegen.
 
   ### Bevinding 5:
-  ...
+  Gebruik maken van Z-index in CSS voor diepte. 
     
 </details>
 
@@ -74,9 +74,9 @@ Feedback Timo: Hou het realistisch, je hebt weinig tijd. Leuk idee om allemaal v
 ## Voortgang/Feedback 2
 
 <details>
-  <summary>Na feedbackmoment 1 keer heb ik het een en ander gewijzigd aan mijn concept. In plaats van Mario door de buizen te laten verplaatsen en vervolgens automatisch doorschuiven naar het volgende beeld, ga ik de gebruiker laten scrollen door verschillende schermpjes. 
+  <summary>Na feedbackmoment 1 keer heb ik het een en ander gewijzigd aan mijn concept. In plaats van Mario door de buizen te laten verplaatsen en vervolgens automatisch doorschuiven naar het volgende image, ga ik de gebruiker laten scrollen door verschillende images in het scherm. 
     
- Ik maak drie verschillende schermen waarin drie verschillende games te zien zijn, allemaal uit een ander jaartal (1985 - 1991 - 2009). Verder heb ik een background image aan mijn ontwerp toegevoegd om de look & feel passender te maken. Ik heb gekozen voor een rustige achtergrond kleur met subtiele wolkjes. Ik heb erover nagedacht om per image/game de background image mee te laten veranderen, maar uiteindelijk heb ik besloten het toch te laten bij één vaste achtergrond, omdat ik het anders te druk vond worden. Hieronder staan nog een aantal belangrijke punten beschreven die niet in orde. Deze punten heb ik uiteindelijk kunnen oplossen door de juiste code te gebruiken.(minimaal 5)</summary>
+ Ik maak drie verschillende schermen waarin drie verschillende games te zien zijn, allemaal uit een ander jaartal (1985 - 1991 - 2009). Verder heb ik een background image aan mijn ontwerp toegevoegd om de look & feel passender te maken. Ik heb gekozen voor een rustige achtergrond kleur met subtiele wolkjes. Ik heb erover nagedacht om per image/game de background image mee te laten veranderen, maar uiteindelijk heb ik besloten het toch te laten bij één vaste achtergrond, omdat ik het anders te druk vond worden. Hieronder nog een aantal bevindingen, die ik uiteindelijk heb kunnen oplossen door de juiste code te gebruiken.</summary>
   
   
   ### Bevinding 1:
@@ -96,8 +96,8 @@ Feedback Timo: Hou het realistisch, je hebt weinig tijd. Leuk idee om allemaal v
   #### oplossing:
   Door de overige twee afbeeldingen die buiten het scherm van de gameboy vielen te verbergen heb ik overflow:hidden; gebruikt. 
   
-  <img src="readme-images/5.1.onderelkaar.png" width="375px" alt="">
-  <img src="readme-images/5.2.onderelkaar.png" width="375px" alt="">
+  <img src="readme-images/5.1onderelkaar.png" width="375px" alt="">
+  <img src="readme-images/5.2onderelkaar.png" width="375px" alt="">
  
   
   
@@ -106,6 +106,8 @@ Feedback Timo: Hou het realistisch, je hebt weinig tijd. Leuk idee om allemaal v
   
   #### oplossing:
   Om door de afbeeldingen te kunnen scrollen heb ik overflow:scroll; gebruikt. Dit zorgt er dus voor dat het scrollbaar wordt binnen de hoogte van het element zelf (de partent (schermpje vd gameboy) waar de img in is geplaatst. 
+  
+  <img src="readme-images/2.1.png" width="375px" alt="">
 
   
   
@@ -114,6 +116,8 @@ Feedback Timo: Hou het realistisch, je hebt weinig tijd. Leuk idee om allemaal v
   
   #### oplossing:
   Dit heb ik opgelost door scroll-snap-type: y mandatory; te gebruiken. --> y zodat het beeld vast valt in het frame op de y-as.
+  
+  <img src="readme-images/2.1.png" width="375px" alt="">
 
 
 
@@ -123,9 +127,9 @@ Feedback Timo: Hou het realistisch, je hebt weinig tijd. Leuk idee om allemaal v
   #### oplossing:
   Wanneer je eigen geschreven tekst vergeet in een comment te plaatsen, wordt alle code daaronder onleesbaar. Dit deel van mijn website viel daardoor weg.
   
-    <img src="readme-images/3.1.codekapot.png" width="375px" alt="codekapot1">
-    <img src="readme-images/3.2.codekapot.png" width="375px" alt="codekapot2">
-    <img src="readme-images/3.3.codekapot.png" width="375px" alt="codekapot3">
+    <img src="readme-images/3.1codekapot.png" width="375px" alt="codekapot1">
+    <img src="readme-images/3.2codekapot.png" width="375px" alt="codekapot2">
+    <img src="readme-images/3.3codekapot.png" width="375px" alt="codekapot3">
 
 </details>
 
@@ -136,28 +140,36 @@ Feedback Timo: Hou het realistisch, je hebt weinig tijd. Leuk idee om allemaal v
   
 
 <details>
-  <summary>De laatste stappen die ik in mijn website heb doorgevoerd zijn in plaats van het scrollen door de schermen, de buttons klikbaar maken. Verder heb ik gekeken naar hoe ik de wolkjes in de background image langzaam kan laten bewegen, zodat er net iets meer interactie is. Om wat extra uitleg te geven aan mijn website heb ik rechtsbovenin een 'info'-button toegevoegd waarop de gebruiker kan klikken. En als laatste onderdeel heb ik per scherm het jaartal van de game toegevoegd, die mee veranderd wanneer je door de schermen klikt. Verder hieronder nog een aantal extra punten waar ik tegenaan liep en hoe ik dit heb opgelost.</summary>
+  <summary>De laatste stappen die ik in mijn website heb doorgevoerd zijn in plaats van het scrollen door de schermen, de buttons klikbaar maken. Verder heb ik gekeken naar hoe ik de wolkjes in de background image langzaam kan laten bewegen, zodat er net iets meer interactie is. Om wat extra uitleg te geven aan mijn website heb ik rechtsbovenin een 'info'-button toegevoegd waarop de gebruiker kan klikken. En als laatste onderdeel heb ik per scherm het jaartal van de game toegevoegd, die mee veranderd wanneer je door de schermen klikt. Verder hieronder nog een aantal extra punten waar ik tegenaan liep en hoe ik dit vervolgens heb opgelost.</summary>
   
   ### Bevinding 1:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  De jaartallen onderin het scherm passen niet erg mooi in de rest van het design. Na feedback gekregen te hebben van Rowin heb ik besloten om er een box shadow achter te plaatsen.
 
   #### oplossing:
   Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  
+    <img src="readme-images/4.1boxshadow.png" width="375px" alt="">
+    <img src="readme-images/4.2boxshadow.png" width="375px" alt="">
+    <img src="readme-images/4.3boxshadowcode.png" width="375px" alt="">
 
 
 
   ### Bevinding 2:
-  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
+  De inset box shadow van het schermpje is niet meer zichtbaar. Om toch nog iets meer detail in de gameboy toe te voegen wilde ik dit toch nog graag toevoegen. Helaas is het mijzelf niet gelukt, maar met Rowin zijn hulp wel. 
 
   #### oplossing:
-  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
+  Zie code in bijgevoegde afbeelding. 
+  
+    <img src="readme-images/7.2boxshadowinside.png" width="375px" alt="">
+    <img src="readme-images/7.3boxshadowinside.png" width="375px" alt="">
+    <img src="readme-images/7.1boxshadowinside.png" width="375px" alt="">
 
 
 
   ### Bevinding 3:
   De vierkante button in mijn gameboy heb ik uiteindelijk met behulp van code van internet kunnen coderen. De onderdelen van deze button zijn allemaal in losse div'jes geplaatst. In plaats van div'jes te gebruiken had deze code ook geschreven kunnen worden door een unordered list (ul) en list items te gebruiken. Uiteindelijk heb ik de code niet hiernaar aangepast, omdat de code in mijn CSS anders niet meer klote. Wel was dit achteraf gezien netter geweest. 
   
-  <img src="readme-images/3.3.codekapot.png" width="375px" alt="codekapot3">
+  <img src="readme-images/6.1vierkantebutton.png" width="375px" alt="codekapot3">
 
 </details>
 
