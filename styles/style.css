@@ -8,6 +8,14 @@ html, body {
   margin:0;
 }
 
+@font-face {
+  font-family:'mario';
+  src: url('../fonts/superplumberbrothers-y00v-webfont.woff2') format('woff2'),
+       url('../fonts/superplumberbrothers-y00v-webfont.woff') format('woff');
+  font-weight:normal;
+  font-style:normal;
+}
+
 button:not([disabled]) {
   cursor:pointer;
 }
@@ -20,11 +28,13 @@ button:not([disabled]) {
 :root {
   --ronde-buttons-kleur: #973663;
   --linker-button-kleur: #2D2F30;
-  --selectstart-button-kleur: #817D82;
   --nintendo-logo-kleur: #404188;
   --nintendo-gameboy-kleur: #C3C0BB;
   --ronde-buttons-kleur-hover: #86335a;
   --vierkante-button-kleur-hover: #18191a;
+  --tekst-kleur: #FCDCCA;
+  --font-mario: mario,sans-serif;
+  --font-standaard: sans-serif;
 }
 
 
@@ -46,11 +56,11 @@ header img {
 
 
 
-
 /***************/
 /* BODY */
 /***************/
 body {
+  font-family:var(--font-standaard);
   /* de standaard margin van de body uitzetten */
 	margin:0;
 	/* zo hoog als het scherm */
@@ -73,10 +83,10 @@ body {
   height:100%;
   width:100%;
 
-  /* animation-name:backgroundanimation;
+  animation-name:backgroundanimation;
   animation-duration: 600s;
   animation-timing-function: linear;
-  z-index: -1; */
+  z-index:-1;
 }
 
 .jaartal1 {
@@ -85,25 +95,72 @@ body {
   height: auto;
   bottom:5%;
   right: 5%;
+  /* x-verschuiving, y-verschuiving, vervaging, kleur */
   box-shadow:1em 1em 1em rgb(0 0 0 / .5);
 }
 
 .info {
   position:absolute;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  margin: 0;
   width:4em;
-  height: auto;
+  aspect-ratio:  1/1;
   top:5%;
   right: 5%;
+  background-color: transparent;
+  border: none;
   box-shadow:1em 1em 1em rgb(0 0 0 / .5);
+  cursor:pointer;
 }
 
+
+
+
 .madeby {
-  position: absolute;
+  position:absolute;
   width:15em;
   height: auto;
   bottom:5%;
   right: 79%;
   box-shadow:1em 1em 1em rgb(0 0 0 / .5);
+}
+
+.tekstvak {
+  position:absolute;
+  width:40em;
+  height:50%;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  box-shadow:1em 1em 1em rgb(0 0 0 / .5);
+  z-index:1;
+
+  background-image:url(../images/tekstvak.jpg);
+  background-size:cover;
+  opacity:0;
+  visibility:hidden;
+  transition:.3s;
+}
+
+.tekstvak p {
+  font-size: 1.7em;
+  font-family:var(--font-mario);
+  color:var(--tekst-kleur);
+  text-shadow: 0.1em 0.2em 0em black;
+
+  text-align:center;
+  padding-left: 3em;
+  padding-right: 3em;
+  top: 50%;
+  position: absolute;
+  transform: translatey(-60%);
+}
+
+.tekstvak.open {
+  opacity:1;
+  visibility:visible;
 }
 
 
@@ -112,16 +169,17 @@ body {
 /* GAMEBOY */
 /***************/
 article {
+  background-color:var(--nintendo-gameboy-kleur);
   position:relative;
   width:24em;
   height:36em;
   padding:3em 2em 2em 2em;
-    background-color:var(--nintendo-gameboy-kleur);
   border-radius:1em 1em 8em 1em / 1em 1em 5em 1em;
   /* https://html-css-js.com/css/generator/box-shadow/ */
   box-shadow:
     inset -.25em -.25em .25em rgb(102 102 102),
     inset .25em .25em .25em rgb(255 255 255),
+    /* schaduw achter gameboy */
     1em 1em 1em rgb(0 0 0 / .5);
     /* diepte gameboy */
     z-index:1;
@@ -145,13 +203,13 @@ article {
 /* SCHERM GAMEBOY */
 /***************/
 section.scherm {
-   /* grootte van het beeldscherm */
+  background-color:rgb(102 115 128);
+   /* grootte van het schermpje */
   height:15em;
   position:relative;
 
    /* img valt in het scherm */
   overflow:hidden;
-  background-color:rgb(102 115 128);
 
   /* https://9elements.github.io/fancy-border-radius */
   border-radius:1em 1em 4em 1em / 1em 1em 2.5em 1em;
@@ -172,11 +230,10 @@ ol {
   /* tijdens scrollen valt beeld vast in frame (y-as) */
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+
   /* niet meer kunnen scrollen met muis */
   pointer-events: none;
-
   scrollbar-width: none;
-
   height:100%;
 }
 
@@ -191,15 +248,26 @@ ol li {
   /* alles wat er buiten valt haalt die weg */
   overflow:hidden;
   
-  /* border-radius:1em 1em 4em 1em / 1em 1em 3.9em 1em; */
-  /* https://html-css-js.com/css/generator/box-shadow/ */
-  /* box-shadow:
-    inset -.1em -.1em .1em rgb(240 240 240),
-    inset .1em .1em .1em rgb(51 58 64); */
-    scroll-snap-align:center;
+  scroll-snap-align:center;
 
-    /*list items verbergen */
-    list-style-type:none;
+  /*list items verbergen */
+  list-style-type:none;
+  }
+
+  ol li::after {
+    /* schaduw in het scherm met behulp van Rowin */
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+
+     /* https://9elements.github.io/fancy-border-radius */
+    border-radius:1em 1em 4em 1em / 1em 1em 2.5em 1em;
+    box-shadow:
+    inset -.1em -.1em .1em rgb(240, 240, 240),
+    inset .1em .1em .1em rgb(51 58 64);
   }
 
 ol li img{
@@ -211,6 +279,7 @@ ol li img{
 ol li:nth-of-type(1) img:nth-of-type(1) {
   /* mario 1 1985*/
   height:2em;
+  /* mario schalen ten opzichte van de img */
   object-fit:contain;
   position:absolute;
   left:-11em;
@@ -280,7 +349,7 @@ ol li:nth-of-type(2) img:nth-of-type(4) {
 
 ol li:nth-of-type(3) img:nth-of-type(1) {
   /* mario 3 2009 */
-  height: 2.5em;
+  height:2.5em;
   object-fit:contain;
   position:absolute;
   left:-11em;
@@ -293,7 +362,7 @@ ol li:nth-of-type(3) img:nth-of-type(1) {
 
 ol li:nth-of-type(3) img:nth-of-type(2) {
   /* flower */
-  height: 2.2em;
+  height:2.2em;
   object-fit:contain;
   position:absolute;
   left:-.6em;
@@ -306,7 +375,7 @@ ol li:nth-of-type(3) img:nth-of-type(2) {
 
 ol li:nth-of-type(3) img:nth-of-type(3) {
   /* pipe 3 */
-  height: 4.5em;
+  height:4.5em;
   object-fit:contain;
   position:absolute;
   left:-.6em;
@@ -319,7 +388,12 @@ ol li:nth-of-type(3) img:nth-of-type(3) {
 /* BUTTONS */
 /***************/
 section.rondeKnop1 button {
-  background-color: var(--ronde-buttons-kleur);
+  position:relative;
+  left:20em;
+  bottom:-1em;
+  transition:.3s;
+ 
+  background-color:var(--ronde-buttons-kleur);
   width:3em;
   height:3em;
   border-radius:50%;
@@ -329,16 +403,11 @@ section.rondeKnop1 button {
   inset -.25em -.25em .25em #5e203d,
   inset .25em .25em .25em #e2abc3,
   .5em .5em .5em rgb(0 0 0 / .1);
-
-  position:relative;
-  left:20em;
-  bottom:-1em;
-  transition:.3s;
 }
 
 section.rondeKnop1 button:hover {
   /* styling ronde button1 hover state */
-  background-color: var(--ronde-buttons-kleur-hover);
+  background-color:var(--ronde-buttons-kleur-hover);
   box-shadow:
   inset -.25em -.25em .25em rgb(255 255 255 /0.3),
   inset .25em .25em .25em rgb(0 0 0 /0.3);
@@ -346,15 +415,19 @@ section.rondeKnop1 button:hover {
 
 section.rondeKnop1 button:focus {
   /* styling ronde button1 focus state */
-  background-color: var(--ronde-buttons-kleur-hover);
+  background-color:var(--ronde-buttons-kleur-hover);
   box-shadow:
   inset -.25em -.25em .25em rgb(255 255 255 /0.3),
   inset .25em .25em .25em rgb(0 0 0 /0.3);
-  outline: none;    
+  outline:none;    
 }
 
 section.rondeKnop2 button {
-  background-color: var(--ronde-buttons-kleur);
+  position:relative;
+  left:17em;
+  bottom:-1em;
+  
+  background-color:var(--ronde-buttons-kleur);
   width:3em;
   height:3em;
   border-radius:50%;
@@ -364,10 +437,6 @@ section.rondeKnop2 button {
   inset -.25em -.25em .25em #5e203d,
   inset .25em .25em .25em #e2abc3,
   .5em .5em .5em rgb(0 0 0 / .1);
-
-  position:relative;
-  left:17em;
-  bottom:-1em;
 }
 
 section.rondeKnop2 button:hover {
@@ -476,8 +545,27 @@ div.wrapper button:focus {
   box-shadow:
   inset -.25em -.25em .25em rgb(255 255 255 /0.3),
   inset .25em .25em .25em rgb(0 0 0 /0.3);
-  outline: none;
+  outline:none;
 }
+
+.info img {
+  /* styling info */
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+
+.info:hover {
+  /* styling info hover state */
+  box-shadow:1em 1em 1em rgb(0 0 0 / .6);
+}
+
+.info:focus {
+  /* styling focus state */
+  box-shadow:1em 1em 1em rgb(0 0 0 / .6);
+  outline:none;
+}
+
 
 
 /***************/

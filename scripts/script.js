@@ -1,5 +1,7 @@
 // JavaScript Document
 
+// code voor buttons (hulp van Rowin)
+
 var scherm = document.querySelector(".scherm ol");
 var buttonUp = document.querySelector(".up");
 var buttonDown = document.querySelector(".down");
@@ -33,3 +35,25 @@ function scrollDown() {
     document.querySelector(".scherm ol li:nth-of-type(" + scrollElement + ")").scrollIntoView();
     jaartalFoto.src = "../images/" + jaartallen[scrollElement - 1] + ".png";
 }
+
+
+// code voor info knop (hulp van Timo)
+
+var infoButton = document.querySelector(".info");
+var infoTekstvak = document.querySelector(".tekstvak");
+var infoImage = document.querySelector(".info img");
+
+infoButton.addEventListener("click", openInfo);
+
+function openInfo(){
+    infoTekstvak.classList.toggle("open");
+    this.classList.toggle("open");
+
+    if (infoButton.classList.contains("open")) {
+        infoImage.src = "../images/kruisje.jpg";
+    } else {
+        infoImage.src = "../images/info.png";
+    }
+}
+
+
