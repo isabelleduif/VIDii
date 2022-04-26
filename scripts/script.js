@@ -22,7 +22,7 @@ function scrollUp() {
     }
 
     document.querySelector(".scherm ol li:nth-of-type(" + scrollElement + ")").scrollIntoView();
-    jaartalFoto.src = "../images/" + jaartallen[scrollElement - 1] + ".png";
+    jaartalFoto.src = "images/" + jaartallen[scrollElement - 1] + ".png";
 }
 
 function scrollDown() {
@@ -33,7 +33,7 @@ function scrollDown() {
     }
 
     document.querySelector(".scherm ol li:nth-of-type(" + scrollElement + ")").scrollIntoView();
-    jaartalFoto.src = "../images/" + jaartallen[scrollElement - 1] + ".png";
+    jaartalFoto.src = "images/" + jaartallen[scrollElement - 1] + ".png";
 }
 
 
