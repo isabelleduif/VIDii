@@ -227,7 +227,6 @@ Ook zou je wanneer je de info-button nog kunnen aanpassen naar een kruisje om he
 
 
 
-
 ## Bronnenlijst
 
 <details open>
