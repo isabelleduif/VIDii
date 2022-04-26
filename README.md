@@ -127,9 +127,13 @@ Feedback Timo: Hou het realistisch, je hebt weinig tijd. Leuk idee om allemaal v
   #### oplossing:
   Wanneer je eigen geschreven tekst vergeet in een comment te plaatsen, wordt alle code daaronder onleesbaar. Dit deel van mijn website viel daardoor weg.
   
-  <img src="readme-images/3.1codekapot.png" width="375px" alt="codekapot1">
-  <img src="readme-images/3.2codekapot.png" width="375px" alt="codekapot2">
-  <img src="readme-images/3.3codekapot.png" width="375px" alt="codekapot3">
+  <img src="readme-images/3.1codekapot.png" width="750px" alt="codekapot1">
+  
+  
+  <img src="readme-images/3.2codekapot.png" width="750px" alt="codekapot2">
+  
+  
+  <img src="readme-images/3.3codekapot.png" width="750px" alt="codekapot3">
 
 </details>
 
