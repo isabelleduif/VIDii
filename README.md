@@ -87,8 +87,6 @@ Feedback Timo: Hou het realistisch, je hebt weinig tijd. Leuk idee om allemaal v
   
   <img src="readme-images/1.1.png" width="375px" alt="">
   <img src="readme-images/1.2.png" width="375px" alt="">
-  <img src="readme-images/5.1imgonderelkaar.png" width="375px" alt="">
-  <img src="readme-images/5.2imgonderelkaar.png" width="375px" alt="">
 
 
   
@@ -97,7 +95,9 @@ Feedback Timo: Hou het realistisch, je hebt weinig tijd. Leuk idee om allemaal v
   
   #### oplossing:
   Door de overige twee afbeeldingen die buiten het scherm van de gameboy vielen te verbergen heb ik overflow:hidden; gebruikt.
- 
+  
+  <img src="readme-images/5.1imgonderelkaar.png" width="375px" alt="">
+  <img src="readme-images/5.2imgonderelkaar.png" width="375px" alt="">
   
  
   
