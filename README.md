@@ -162,7 +162,7 @@ Feedback Timo: Hou het realistisch, je hebt weinig tijd. Leuk idee om allemaal v
   
     <img src="readme-images/7.2boxshadowinside.png" width="375px" alt="">
     <img src="readme-images/7.3boxshadowinside.png" width="375px" alt="">
-    <img src="readme-images/7.1boxshadowinside.png" width="375px" alt="">
+    <img src="https://github.com/isabelleduif/VIDii/blob/main/readme-images/7.1boxshadowinside.png" width="375px" alt="">
 
 
 
